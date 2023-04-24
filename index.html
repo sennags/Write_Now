@@ -11,11 +11,17 @@
     <meta name="author" content="Seu Nome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="png" href="icon.png">
 </head>
 <body>
     <div class="navbar">
-        <div class="itens"><a href="leitura.html">LEITURA</a></div>
-        <div class="lord-img" >
+        <div class="itens" data-dropdown>
+            <button class="links" data-dropdown-button>LEITURA</button>
+            <div class="itens-drop">
+                content
+            </div>
+        </div>
+        <div class="lord-img">
             <a href="#">
                 <lord-icon
                     colors = "secondary:#160D08"
@@ -26,13 +32,17 @@
                 </lord-icon>
             </a>
         </div>
-        <div class="navbar-right">
-            <div class="enter"><a href="conectar.html">CONECTAR</a></div>
+        <div class="itens">
+            <button class="links" data-dropdown-button>CONECTAR</button>
+            <div class="itens-drop1">
+                content
+            </div>
         </div>
     </div>
     <div class="container">
-        
+        TESTE
     </div>
+    <script src="script.js" defer></script>
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 </body>
 </html>

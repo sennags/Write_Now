@@ -1,6 +1,5 @@
 body {
     background-color: #160D08;
-    font: normal 20px Courier;
     margin: 0;
 }
 a {
@@ -14,6 +13,38 @@ a {
     align-items: center;
     font-size: 30px;
 }
+.links {
+    background-color: #FFF1E6;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font: bold 30px Courier;
+    color: #666362;
+}
+.itens > .links:focus, .links:hover {
+    color: #080402;
+}
+.itens {
+    position: relative;
+}
+.itens-drop {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 2.2rem);
+    background-color: #FFF1E6;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.itens > .links:focus + .itens-drop {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .container {
     color: white;
 }
