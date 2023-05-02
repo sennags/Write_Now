@@ -17,8 +17,23 @@
     <div class="navbar">
         <div class="itens" data-dropdown>
             <button class="links" data-dropdown-button>LEITURA</button>
-            <div class="itens-drop">
-                content
+            <div class="itens-drop information-grid">
+                <div>
+                    <div class="dropdown-heading">GÊNEROS</div>
+                    <div class="dropdown-links">
+                        <a href="#">Terror</a>
+                        <a href="#">Romance</a>
+                        <a href="#">Drama</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown-heading">PARA VOCÊ</div>
+                    <div class="dropdown-links">
+                        <a href="#">Terror</a>
+                        <a href="#">Romance</a>
+                        <a href="#">Drama</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="lord-img">
@@ -28,14 +43,20 @@
                     src="https://cdn.lordicon.com/wloilxuq.json"
                     trigger="hover"
                     state="hover-2"
-                    style="width:100px;height:100px">
+                    style="width:70px;height:70px">
                 </lord-icon>
             </a>
         </div>
-        <div class="itens">
-            <button class="links" data-dropdown-button>CONECTAR</button>
-            <div class="itens-drop1">
-                content
+        <div class="itens" data-dropdown>
+            <button class="links" data-dropdown-button>LOGIN</button>
+            <div class="itens-drop">
+                <form class="login-form">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <button type="submit">Login</button>
+                </form>
             </div>
         </div>
     </div>
