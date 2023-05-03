@@ -1,5 +1,45 @@
 :root {
     --primary-color: #160D08; /*Preto Background*/
     --secundary-color: #FFF1E6; /*Branco Bonito*/
-    --terciary-color: #080402; /*Preto Bonito*/
+    --terciary-color: #FFEA00; /*Preto Bonito*/
+}
+
+body {
+    background-color: var(--primary-color);
+    font: bold 25px Courier;
+    margin: 0;
+}
+.space1 {
+    margin: 90px;
+}
+.container {
+    max-width: 100%;
+}
+.login-container {
+    background-color: var(--terciary-color);
+    box-shadow: 0px 0px 5px #ffea02;
+    border-radius: .5rem;
+    margin: auto;
+    max-width: 25%;
+    width: max-content;
+    text-align: center;
+    padding: 30px;
+}
+.login-enter {
+    text-align: left;
+    margin-top: 10px;
+}
+fieldset {
+    border-radius: .5rem;
+    background-color: #FFF1E6;
+}
+legend {
+    background-color: var(--terciary-color);
+    border-radius: .5rem;
+    border: #080402 solid 2px;
+    padding: .3rem;
+}
+.enter {
+    text-align: right;
+    padding: 10px;
 }
