@@ -1,3 +1,4 @@
+
 body {
     background-color: #160D08;
     margin: 0;
@@ -37,10 +38,12 @@ a {
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
 }
 .itens.active > .links + .itens-drop {
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto;
 }
 
 .dropdown-heading {
@@ -54,8 +57,8 @@ a {
 .dropdown-links {
     display: flex;
     flex-direction: column;
-    gap: .25rem;
-    padding: 10px;
+    gap: .55rem;
+    padding: 3px;
 }
 .dropdown-links a {
     color: #666362;
