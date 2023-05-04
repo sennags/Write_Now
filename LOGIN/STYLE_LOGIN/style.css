@@ -13,16 +13,15 @@ body {
     margin: 90px;
 }
 .container {
-    max-width: 100%;
+    width: clamp(500px, 25%, 700px);
+    margin: auto;
 }
 .login-container {
-    background-color: var(--terciary-color);
-    box-shadow: 0px 0px 5px #ffea02;
+    background-color: var(--secundary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
     border-radius: .5rem;
-    margin: auto;
-    max-width: 25%;
     text-align: center;
-    padding: 50px;
+    padding: 35px;
 }
 .login-enter {
     display: grid;
@@ -41,6 +40,8 @@ input {
     border-radius: .5rem;
     border: #080402 solid 2px;
     max-width: 100%;
+    padding: 10px;
+    font: bold 20px Courier;
 }
 fieldset {
     border-radius: .5rem;
@@ -49,7 +50,8 @@ fieldset {
     border: #080402 solid 2px;
 }
 legend {
-    background-color: var(--terciary-color);
+    background-color: var(--primary-color);
+    color: #FFF1E6;
     border-radius: .5rem;
     border: #080402 solid 2px;
     box-shadow: 0px 0px 5px #080402;
